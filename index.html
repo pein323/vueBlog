@@ -9,9 +9,9 @@
   <body>
     <div id="vue-app">
       <h1>{{ greet () }}</h1>
-      <h3>{{ name }}</h3>
-      <p>Job: {{ job }}</p>
-
+      <a :href="website">Google</a>
+      <input type="text" name="" :value="name">
+      <p v-html="websiteTag"></p>
     </div>
     <script src="app.js"></script>
   </body>
