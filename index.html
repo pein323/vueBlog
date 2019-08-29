@@ -27,6 +27,30 @@
       </div>
       <a v-on:click.prevent.once="click" href="http://google.pl">google 2</a>
     </div>
+
+    <div id="vue-app-keyboard">
+      <h1>Keyboard Events</h1>
+      <label>Name:</label>
+      <input type="text" v-model="name">
+      {{name}}
+      <label>Age:</label>
+      <input type="text" v-model="age">
+      {{age}}
+    </div>
+
+    <div id="vue-app-dynamic-css">
+      <h1>Dynamic css</h1>
+      <h2>example1</h2>
+      <div @click="available = !available" v-bind:class="{available: available}">
+        <span>LOL</span>
+      </div>
+      <h2>example2</h2>
+      <button @click="nearby = !nearby">Toggle nearby</button>
+      <button @click="available = !available">Toggle available</button>
+      <div :class="compClasses">
+        <span>LOL</span>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

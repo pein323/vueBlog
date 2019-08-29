@@ -36,3 +36,36 @@ new Vue({
     }
   }
 })
+
+new Vue({
+  el: '#vue-app-keyboard',
+  data: {
+    name: '',
+    age: ''
+  },
+  methods:{
+    logAge: function (event) {
+      console.log('Passed age value');
+    },
+    logName: function (event) {
+      console.log('Passed name value');
+    }
+  }
+})
+
+new Vue({
+  el: '#vue-app-dynamic-css',
+  data: {
+    available: false,
+    nearby: false
+  },
+  methods: {},
+  computed: {
+    compClasses: function () {
+      return {
+        available: this.available,
+        nearby: this.nearby
+      };
+    }
+  }
+})
