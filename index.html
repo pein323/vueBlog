@@ -51,6 +51,14 @@
         <span>LOL</span>
       </div>
     </div>
+
+    <div id="vue-app-conditionals">
+      <h1>Conditionals</h1>
+      <button @click="error = !error">Toggle Error</button>
+      <button @click="success = !success">Toggle Success</button>
+      <p v-if="error">There is an error</p>
+      <p v-else-if="success">There is an success</p>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

@@ -69,3 +69,17 @@ new Vue({
     }
   }
 })
+
+new Vue({
+  el: '#vue-app-conditionals',
+  data: {
+    error: false,
+    success: false,
+  },
+  methods: {
+
+  },
+  computed: {
+
+  }
+})
