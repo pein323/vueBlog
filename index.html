@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
+<!--
     <div id="vue-app">
       <h1>{{ greet () }}</h1>
       <a :href="website">Google</a>
@@ -58,6 +59,16 @@
       <button @click="success = !success">Toggle Success</button>
       <p v-if="error">There is an error</p>
       <p v-else-if="success">There is an success</p>
+    </div> -->
+
+    <div id="vue-app-refs">
+      <h2>Refs</h2>
+      <input type="text" ref="input">
+      <button v-on:click="readRefs()">submit</button>
+      <p>Your fave food: {{output}} </p>
+      <div ref="test">
+        hello
+      </div>
     </div>
     <script src="app.js"></script>
   </body>

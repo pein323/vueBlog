@@ -83,3 +83,20 @@ new Vue({
 
   }
 })
+
+new Vue({
+  el:'#vue-app-refs',
+  data: {
+    output:'Your fav dood'
+  },
+  methods:{
+    readRefs: function () {
+      console.log(this.$refs.test.innerText);
+      this.output = this.$refs.input.value;
+    }
+
+  },
+  computed: {
+
+  }
+})
